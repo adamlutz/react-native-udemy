@@ -2,15 +2,17 @@ import React from "react";
 import { Text, StyleSheet, View, Button } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
+  // console.log(props.navigation)
+
   return (
     <View>
       <Button title='Components Demo'
-      onPress={() => {console.log('here')}} />
+      onPress={() => { props.navigation.navigate('Components')} } />
       <Text style={styles.text}>Hi</Text>
 
       <TouchableOpacity
-        onPress={() => {console.log('list pressed')}} >
+        onPress={() =>  { props.navigation.navigate('List')} } >
         <Text style={styles.text}>Go To List Demo</Text>
       </TouchableOpacity>
     </View>
