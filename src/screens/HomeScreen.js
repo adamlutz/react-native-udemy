@@ -10,10 +10,12 @@ const HomeScreen = ({ navigation }) => {
     <View>
       <Button title='Components Demo'
       onPress={() => { navigation.navigate('Components')} } />
-      <Text style={styles.text}>Hi</Text>
-
+      
+      <Button title='Images'
+      onPress={() => { navigation.navigate('Images')} } />
+      
       <TouchableOpacity
-        onPress={() =>  { navigation.navigate('List')} } >
+        onPress={() =>  { navigation.navigate('Lists')} } >
         <Text style={styles.text}>Go To List Demo</Text>
       </TouchableOpacity>
     </View>
