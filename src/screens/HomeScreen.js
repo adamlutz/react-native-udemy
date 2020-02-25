@@ -22,11 +22,12 @@ const HomeScreen = ({ navigation }) => {
       
       <Button title='Squares'
       onPress={() => { navigation.navigate('Squares')} } />
-      
             
       <Button title='Text'
       onPress={() => { navigation.navigate('Text')} } />
-      
+                  
+      <Button title='Box'
+      onPress={() => { navigation.navigate('Box')} } />
       <TouchableOpacity
         onPress={() =>  { navigation.navigate('Lists')} } >
         <Text style={styles.text}>Go To List Demo</Text>
